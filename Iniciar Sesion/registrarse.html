@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MundoBovino</title>
-    <link rel="stylesheet" href="registro.css">
+    <link rel="stylesheet" href="registrarse.css">
 </head>
 <body>
     <div class="bienvenida"> 
@@ -29,30 +29,47 @@
                         <b>Registrarse</b>
                     </button>
                 </div>
-            <div class="formulario">
-                <div >
-                    <form id="datos">
-                        <label for="">Email</label>
-                        <input type="email" id="info">
-                        <br>
-                        <label for="">Nombre de Usuario</label>
-                        <input type="text" id="info">
-                        <br>
-                        <label for="">Nombre de Finca</label>
-                        <input type="text" id="info">
-                        <br>
-                        <label for="">Contraseña</label>
-                        <input type="password" id="info">
-                        <br>
-                        <label for="">Confirmar Contraseña</label>
-                        <input type="password" id="info">
-                    </form>
-                    <form action="iniciarsesion.html" method="get">
-                        <input type="submit" value="Registrarse">
-                    </form>
-                </div>
+                <div class="container mt-5">
+                    <div class="formulario">
+                        <form id="datos" action="iniciarsesion.html" method="get">
+                            <br>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <br>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="username">Nombre de Usuario</label>
+                                <br>
+                                <input type="text" class="form-control" id="username" required>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="finca">Nombre de Finca</label>
+                                <br>
+                                <input type="text" class="form-control" id="finca" required>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="password">Contraseña</label>
+                                <br>
+                                <input type="password" class="form-control" id="password" required>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="confirm-password">Confirmar Contraseña</label>
+                                <br>
+                                <input type="password" class="form-control" id="confirm-password" required>
+                            </div>
+                            <br>
+                            <form action="iniciarsesion.html" method="get">
+                                <input type="submit" value="Registrarse">
+                            </form>
+                        </form>
+                    </div>
                 
-            </div>
+                </div>
             </div>
         </main>
     </div>
