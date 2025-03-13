@@ -3,11 +3,9 @@
     margin: 0px;
     box-sizing: border-box;
 }
-
 body{
     background-color: #f8dfb3;
 }
-
 .bienvenida{
     height: 100vh;
     width: 100vw;
@@ -30,11 +28,17 @@ header{
     margin-top: 7px;
 }
 
+#soporte{
+    margin-left: 790px;
+    margin-top: 30px;
+    
+}
+
 main{
     grid-area: main;
 }
 
-.mensaje{
+.panelprincipal{
     background-color: #D3B177;
     box-shadow: 0 4px 6px rgba(0, 0, 0.3, 0.3);
     height: 310px;
@@ -45,6 +49,7 @@ main{
     align-items: center;
     justify-content: space-between;
     position: relative;
+    margin-left: 150px;    
 }
 
 h1{
@@ -55,106 +60,61 @@ h1{
     display: flex;
     position: absolute;
     transform: translate(0%, 0%);
-    top: 50px;
+    top: 25px;
     left: 20px;
     right: 20px;
     justify-content: center;
     text-align: center;
 }
-
-.autenticacion{
-    display: grid;
-    justify-content: center;
-    margin-top: 83px;
-    margin-right: 15px;
-}
-
-#registro{
-    background-color: #947643;
-    height: 39px;
-    width: 170px;
-    border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0.3, 0.3);
-    margin-top: 27px;
-    color: #ffffff;
+#logo2{
+    display: flex;
+    margin-top: 90px;
+    height: 130px;
+    margin-left: 180px;
     cursor: pointer;
-    margin-left: 155px;
 }
 
-#registro:hover{
-    background-color: #D3B17743;
-    color: #000000;
-}
-
-#inicio{
-    background-color: #D3B177;
-    height: 39px;
-    width: 170px;
-    border-radius: 20px;
-    border-color: #0e0b064b;
+/* Estilos para el carrusel */
+#carouselGanadero {
     box-shadow: 0 4px 6px rgba(0, 0, 0.3, 0.3);
-    margin-top: 27px;
-    color: #000000;
-    cursor: pointer;
-    margin-left: 155px;
+    border-radius: 30px; 
+    display: flex;
+    height: 400px;
+    width: 450px;
+    margin: 600px;
+    z-index: -1;
+    position: absolute;
+    overflow: hidden;
 }
 
-#inicio:hover{
-    background-color: #947643;
-    color: #ffffff;
-}
-
-.formulario {
-    background-color: #D3B177;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    height: 368px;
+.carousel-inner {
     border-radius: 30px;
-    margin-left: 380px;
-    min-width: 400px;
+    height: 100%;
 }
 
-#datos {
-    margin: 15px;
-    display: grid;
-    margin-right: 10px;
-    font-size: 15px;
-}
-/* Estilos para el botón tipo submit */
-input[type="submit"] {
-    background-color: #D3B177;
-    border-radius: 20px;
-    height: 27px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    border-color: #947643;
-    cursor: pointer;
-    width: 320px;
-    margin-left: 17px;
+.carousel-item {
+    height: 100%;
 }
 
-input[type="submit"]:hover {
-    background-color: #947643;
-    color: #ffffff;
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
 }
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    border-radius: 7px;
-    border-color: #00000070;
-    height: 28px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    margin-left: 17px;
-    width: 320px;
- 
+
+.carousel-indicators {
+    margin-bottom: 1rem;
 }
 
 footer{
     grid-area: footer;
-    height: 90px;
     background: rgb(109,92,62);
     background: linear-gradient(90deg, rgba(109,92,62,1) 25%, rgba(211,177,119,1) 100%);
     width: 100vw;
     display: grid;
+    height: 100px;
 }
+
 
 button{
     background-color: #D3B177;
@@ -163,7 +123,6 @@ button{
     border-radius: 20px;
     border-color: #0e0b064b;
     box-shadow: 0 4px 6px rgba(0, 0, 0.3, 0.3);
-    margin-top: 28px;
     color: #000000;
     cursor: pointer;
 }
@@ -173,7 +132,7 @@ button:hover{
     color: #ffffff;
 }
 
-/* Laptops (1024px a 1440px) */
+/* Laptops (1024px to 1440px) */
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
     #logo1{
         width: 160px;
@@ -181,48 +140,57 @@ button:hover{
         margin-left: 20px;
     }
 
-    .mensaje {
+    .panelprincipal {
         width: 450px;
-        margin-left: 270px;
+        margin-left: 250px;
     }
-
-    .formulario {
-        margin-left: 200px;
-        min-width: 370px;
+    
+    #logo2 {
+        margin-left: 160px;
+        height: 120px;
     }
-
-    .soporte {
-        margin-left: 850px;
+    
+    #carouselGanadero {
+        width: 400px;
+        height: 350px;
+        margin: 550px;
     }
+    
+    #soporte {
+        margin-left: 630px;
+    } 
 }
 
-/* Desktop Computers (1600px y above) */
+/* Desktop Computers (1441px and above) */
 @media screen and (min-width: 1500px) {
     #logo1{
-        width: 160px;
-        height: 160px;
+        width: 140px;
+        height: 140px;
         margin-left: 20px;
     }
 
-    .mensaje {
-        margin-top: 185px;
+    .panelprincipal {
+        margin-top: 230px;
         width: 500px;
         margin-left: 400px;
     }
-
-    .formulario {
-        margin-left: 300px;
-        min-width: 400px;
+    
+    #logo2 {
+        margin-left: 180px;
+        height: 130px;
     }
-
-    .soporte {
-        margin-left: 1400px;
+    
+    #carouselGanadero {
+        width: 450px;
+        height: 400px;
+        margin: 600px;
     }
-
+    
+    #soporte {
+        margin-left: 1250px;
+    }
+    
     footer{
         margin-top: 230px;
     }
-
 }
-
-

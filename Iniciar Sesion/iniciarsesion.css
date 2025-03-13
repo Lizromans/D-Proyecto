@@ -105,52 +105,54 @@ h1{
     color: #ffffff;
 }
 
-.formulario{
+.formulario {
     background-color: #D3B177;
-    box-shadow: 0 4px 6px rgba(0, 0, 0.3, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     height: 325px;
     border-radius: 30px;
-    margin-left: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px; /* Añadido para un poco de espacio interno */
     min-width: 400px;
 }
-
-#datos{
-    margin-top: 75px;
+#datos {
+    margin-top: 25px;
     display: grid;
     margin-right: 20px;
     font-size: 15px;
     margin-left: 25px;
-
 }
 
-#iniciarsesion{
+input[type="submit"] {
     background-color: #D3B177;
     border-radius: 20px;
-    height: 27px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0.3, 0.3);
-    border-color:#947643;
+    height: 35px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-color: #947643;
     cursor: pointer;
     margin-top: 10px;
+    width: 320px;
 }
 
-#iniciarsesion:hover{
+input[type="submit"]:hover {
     background-color: #947643;
     color: #ffffff;
 }
-
-#info{
+input[type="text"],
+input[type="password"] {
     border-radius: 7px;
-    border-color: #00000070;
-    height: 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0.3, 0.3);
+    border: 1px solid #00000070;
+    height: 35px; /* Aumentado para mejor apariencia */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 5px; /* Añadido para un poco de espacio interno */
+    width: 320px;
 }
-
-#checkbox{
+.form-check {
     margin-top: 3px;
     font-size: 12px;
-    accent-color:#947643;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    accent-color: #947643; /* Para navegadores que soportan esta propiedad */
     margin-left: 10px;
+    cursor: pointer;
 }
 
 footer{
