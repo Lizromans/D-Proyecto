@@ -1,0 +1,48 @@
+{% load static from static %} <!-- cargar la carpeta de estilos -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %} {% endblock %}</title>
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/bienvenida.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/autenticacion.css' %}" type="text/css">
+</head>
+<body>
+    {% block contenido %}{% endblock %}
+    <div class="bienvenida"> 
+        <header>
+            <img src="{%static 'img/logo1.png'%}" alt="logo1" id="logo1">
+            <div style="margin-left: 920px; color: rgb(0, 0, 0); height: 30px; width: 135px; border-radius:30px; font-size: 18px; margin-left: 930px" id="navbar">
+                <nav class="navbar navbar-expand navbar-#947643 bg-#947643" >
+                    <button>
+                        <a class="nav-item nav-link active" href="{% url 'autenticacion' %}" aria-current="page" > Autenticación</a>  
+                    </button>
+                </nav>
+            </div>     
+        </header>
+        
+    </div>
+    <div>
+        <main>
+            {% block estructura %} {% endblock %}
+        </main>
+    </div>
+    
+    <div>
+        <footer>
+            <div id="soporte">
+                <button> Soporte en Línea</button>
+                <button> FAQ </button>
+                <Button>Manual de Uso</Button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript de Bootstrap y dependencias -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+</body>
+</html>

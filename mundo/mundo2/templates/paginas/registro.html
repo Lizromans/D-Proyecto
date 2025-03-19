@@ -1,0 +1,54 @@
+{% extends "Base.html" %}
+{% load static %}
+{% block titulo %} Mundo Bovino {% endblock %}
+{% block css %}  href="{% static 'css/registro.css' %}" rel="stylesheet" {% endblock %}
+{% block contenido %} {% endblock %}
+{% block main %}
+        <div class="mensaje">
+            <div>
+                <h1>
+                    <b>¡Bienvenido a Mundo Bovino: Tu aliado digital en la gestión ganadera. Optimiza 
+                    tu producción, mejora la salud de tu ganado y maximiza tus beneficios con nuestra innovadora aplicación.!</b>
+                </h1>
+            </div>
+            <div class="autenticacion">
+                <button id="inicio">
+                    <b>Iniciar Sesión</b>
+                </button>
+                <button id="registro">
+                    <b>Registrarse</b>
+                </button>
+            </div>
+            <div class="container mt-2.5">
+                <div class="formulario">
+                    <form id="datos" action="iniciarsesion.html" method="get">
+                        <div class="form-group m-2">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group m-1">
+                            <label for="username">Nombre de Usuario</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="form-group m-1">
+                            <label for="finca">Nombre de Finca</label>
+                            <input type="text" class="form-control" id="finca" required>
+                        </div>
+                        <div class="form-group m-1">
+                            <label for="password">Contraseña</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="form-group m-1">
+                            <label for="confirm-password">Confirmar Contraseña</label>
+                            <input type="password" class="form-control" id="confirm-password" required>
+                        </div>
+                        <br>
+                        <form action="iniciarsesion.html" method="get">
+                            <input type="submit" value="Registrarse">
+                        </form>
+                    </form>
+                </div>
+            
+            </div>
+        </div>
+{% endblock %}

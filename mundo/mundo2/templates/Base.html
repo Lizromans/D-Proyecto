@@ -1,0 +1,41 @@
+{% load static from static %} <!-- cargar la carpeta de estilos -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %} {% endblock %}</title>
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link {% block css %}{% endblock %}>
+
+</head>
+<body>
+    {% block contenido %}{% endblock %}
+    <div class="bienvenida"> 
+        <header>
+            <img src="{%static 'img/logo1.png'%}" alt="logo1" id="logo1">    
+        </header>
+        
+    </div>
+    <div>
+        <main>
+            {% block main %} {% endblock %}
+        </main>
+    </div>
+    
+    <div>
+        <footer>
+            <div id="soporte">
+                <button> Soporte en Línea</button>
+                <button> FAQ </button>
+                <Button>Manual de Uso</Button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript de Bootstrap y dependencias -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+</body>
+</html>
