@@ -113,7 +113,7 @@ h1{
     min-width: 400px;
 }
 
-#datos {
+.datos {
     margin: 15px;
     display: grid;
     margin-right: 10px;
@@ -129,7 +129,6 @@ input[type="submit"] {
     border-color: #947643;
     cursor: pointer;
     width: 320px;
-    margin-left: 17px;
 }
 
 input[type="submit"]:hover {
@@ -143,7 +142,6 @@ input[type="password"] {
     border-color: #00000070;
     height: 28px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    margin-left: 17px;
     width: 320px;
  
 }
