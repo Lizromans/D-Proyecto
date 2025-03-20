@@ -19,6 +19,7 @@ header{
     background: rgb(211,177,119);
     background: linear-gradient(90deg, rgba(211,177,119,1) 25%, rgba(109,92,62,1) 100%);
     height: 100px;
+    display: flex;
 }
 
 #logo1{
@@ -36,7 +37,7 @@ main{
 .mensaje{
     background-color: #D3B177;
     box-shadow: 0 4px 6px rgba(0, 0, 0.3, 0.3);
-    min-height: auto;
+    height: 310px;
     margin: 75px;
     display: flex;
     width: 500px;
@@ -44,7 +45,6 @@ main{
     align-items: center;
     justify-content: space-between;
     position: relative;
-    margin-left: 250px;
 }
 
 h1{
@@ -55,7 +55,7 @@ h1{
     display: flex;
     position: absolute;
     transform: translate(0%, 0%);
-    top: 25px;
+    top: 30px;
     left: 20px;
     right: 20px;
     justify-content: center;
@@ -65,7 +65,7 @@ h1{
 .autenticacion{
     display: grid;
     justify-content: center;
-    margin-top: 83px;
+    margin-top: 63px;
     margin-right: 15px;
 }
 
@@ -104,22 +104,22 @@ h1{
     color: #ffffff;
 }
 
-.formulario{
+.formulario {
     background-color: #D3B177;
-    box-shadow: 0 4px 6px rgba(0, 0, 0.3, 0.3);
-    height: 365px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    height: 368px;
     border-radius: 30px;
     margin-left: 380px;
     min-width: 400px;
 }
 
-#datos{
+#datos {
     margin: 15px;
     display: grid;
     margin-right: 10px;
     font-size: 15px;
+    margin-top: 2px;
 }
-
 /* Estilos para el botón tipo submit */
 input[type="submit"] {
     background-color: #D3B177;
@@ -128,21 +128,24 @@ input[type="submit"] {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     border-color: #947643;
     cursor: pointer;
-    margin-top: 10px;
     width: 320px;
-    margin-left: 25px;
+    margin-left: 17px;
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover {
     background-color: #947643;
     color: #ffffff;
 }
-
-#info{
+input[type="text"],
+input[type="email"],
+input[type="password"] {
     border-radius: 7px;
     border-color: #00000070;
-    height: 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0.3, 0.3);
+    height: 28px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-left: 17px;
+    width: 320px;
+ 
 }
 
 footer{
@@ -152,12 +155,6 @@ footer{
     background: linear-gradient(90deg, rgba(109,92,62,1) 25%, rgba(211,177,119,1) 100%);
     width: 100vw;
     display: grid;
-}
-
-#soporte{
-    margin-left: 890px;
-    margin-top: 30px;
-    
 }
 
 button{

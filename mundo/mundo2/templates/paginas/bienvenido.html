@@ -1,7 +1,9 @@
 {% extends "Base.html" %}
 {% block titulo %} Mundo Bovino {% endblock %}
 {% load static %}
-{% block css %}  href="{% static 'css/bienvenida.css '%}" rel="stylesheet" {% endblock %}
+{% block css %}
+<link href="{% static 'css/bienvenida.css' %}" rel="stylesheet">
+{% endblock %}
 {% block contenido %} {% endblock %}
 {% block main %}
         <div class="panelprincipal">
